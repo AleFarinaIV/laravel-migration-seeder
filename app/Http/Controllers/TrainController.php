@@ -9,6 +9,6 @@ class TrainController extends Controller
 {
     public function index() {
         $trains = Train::all();
-        return view('home');
+        return view('home', compact('trains'));
     }
 }
